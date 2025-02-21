@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\ModularMonolith.Shared.Infrastructure\ModularMonolith.Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\ModularMonolith.Modules.Customers.Application\ModularMonolith.Modules.Customers.Application.csproj" />
+    <ProjectReference Include="..\ModularMonolith.Modules.Customers.Domain\ModularMonolith.Modules.Customers.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
