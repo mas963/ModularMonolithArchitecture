@@ -2,7 +2,7 @@
 
 ECommerceProject.sln
 - Bootstrapper
-  [Program.cs]
+  [Program.cs, ...]
 - Modules
     - Customer
         - ECommerceProject.Modules.Customers.Api.csproj
@@ -12,6 +12,7 @@ ECommerceProject.sln
             - Commands
             - Exceptions
             - Interfaces
+              [IEmailService.cs, IIdentityService.cs]
             - Models
         - ECommerceProject.Modules.Customers.Domain.csproj
             - Entities
